@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+// ma so bao mat CVC cua the ngan hang
+<input type="password" id="CVC"/>
+<input type="button" onclick="checkCVC();" value="Check"/>
+<script>
+    function checkCVC() {
+       let cvc = document.getElementById('CVC');
+       let regexp = /^[0-9]{3}$/;
+       if (regexp.test(cvc.value)){
+           alert('CVC is valid');
+       }else {
+           alert('CVC is not valid');
+       }
+    }
+</script>
+</body>
+</html>

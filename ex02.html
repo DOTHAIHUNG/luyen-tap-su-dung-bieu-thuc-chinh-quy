@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text"/>
+<input type="button" onclick="scoutNum();" value="Scout"/>
+<script>
+    function scoutNum() {
+        let text = document.getElementById('text').value;
+        let regexp = /[0-9]/gm;
+        let result = text.match(regexp);
+        console.log(result);
+    }
+</script>
+</body>
+</html>
